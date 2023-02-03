@@ -104,11 +104,13 @@ myApp.config(function ($routeProvider, $locationProvider) {
       //   template: "<h1>Noi dung trang contact</h1>",
       //Truyen file HTML
       templateUrl: "pages/lien-he.html",
+      controller: ThucVatController,
     })
-    .when("/cua-hang", {
+    .when("/cua-hang/:id", {
       // lam gi thi lam
       // noi dung cua trang chu
-      template: "<h1>Noi dung trang cua hang</h1>",
+      templateUrl: "pages/cua-hang.html",
+      controller: HienThiChu,
     })
     .otherwise({
       redirectTo: "/trang-chu",

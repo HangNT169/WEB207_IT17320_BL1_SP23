@@ -104,7 +104,9 @@ myApp.config(function ($routeProvider, $locationProvider) {
       //   template: "<h1>Noi dung trang contact</h1>",
       //Truyen file HTML
       templateUrl: "pages/lien-he.html",
-      controller: ThucVatController,
+      // controller: DongVatController,
+      // ThucVatController,
+      controller: LienHeController,
     })
     .when("/cua-hang/:id", {
       // lam gi thi lam

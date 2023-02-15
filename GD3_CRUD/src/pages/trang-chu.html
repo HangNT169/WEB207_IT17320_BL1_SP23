@@ -1,24 +1,23 @@
 Trang chu
-
 <form>
-  Ten: <input type="text" ng-model="request.ten" />
+  Ten: <input type="text" ng-model="form_thucVat.ten" />
   <br />
-  Loai: <input type="text" ng-model="request.loai" />
+  Loai: <input type="text" ng-model="form_thucVat.loai" />
   <br />
   Gioi tinh:
   <input
     type="radio"
-    value="true"
     name="gender"
-    ng-model="request.gioiTinh"
-    ng-checked="request.gioiTinh == true"
+    value="true"
+    ng-model="form_thucVat.gioiTinh"
+    ng-checked="form_thucVat.gioiTinh == true"
   />Nam
   <input
     type="radio"
-    value="false"
     name="gender"
-    ng-model="request.gioiTinh"
-    ng-checked="request.gioiTinh == false"
+    value="false"
+    ng-model="form_thucVat.gioiTinh"
+    ng-checked="form_thucVat.gioiTinh == false"
   />Nữ
   <br />
   <button ng-click="addThucVat($event);">Add</button>
@@ -45,12 +44,12 @@ Trang chu
       <td>
         <a
           href="#thuc-vat/detail/{{tv.id}}"
-          ng-click="detailThucVat($event,$index)"
+          ng-click="detailThucVat($event,$index);"
           >Detail</a
         >
         <a
           href="#thuc-vat/remove/{{tv.id}}"
-          ng-click="removeThucVat($event,$index)"
+          ng-click="removeThucVat($event,$index);"
           >Remove</a
         >
       </td>
